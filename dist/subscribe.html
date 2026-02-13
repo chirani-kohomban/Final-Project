@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth light">
+<head>
+  <meta charset="UTF-8">
+  <title>Urban Harvest | Subscribe</title>
+  <script type="module" crossorigin src="/assets/main-3W3rYV1O.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/main-Cb9D-rMs.css">
+</head>
+<body>
+
+<!-- HEADER -->
+<header class="bg-[var(--primary)] dark:bg-gray-900 text-white flex justify-between items-center p-4 fixed top-0 z-50 w-full shadow transition-colors duration-300">
+  <h1 class="text-xl font-bold">Urban Harvest</h1>
+
+  <nav class="hidden md:flex gap-6">
+    <a href="index.html" class="hover:text-green-300">Home</a>
+    <a href="products.html" class="hover:text-green-300">Products</a>
+    <a href="subscribe.html" class="hover:text-green-300">Subscribe</a>
+    <a href="community.html" class="hover:text-green-300">Community</a>
+    <a href="impact.html" class="hover:text-green-300">Impact</a>
+  </nav>
+
+  <div class="flex gap-2">
+    <button id="theme-toggle" class="btn">🌗</button>
+    <button id="mobile-menu-btn" class="btn md:hidden">☰</button>
+  </div>
+</header>
+
+<!-- MOBILE MENU -->
+<nav id="mobileMenu" class="hidden md:hidden fixed top-16 left-0 w-full bg-[var(--bg)] dark:bg-gray-800 p-4 z-40">
+  <a href="index.html" class="block py-2 px-4 hover:bg-green-100 dark:hover:bg-green-900 rounded">Home</a>
+  <a href="products.html" class="block py-2 px-4 hover:bg-green-100 dark:hover:bg-green-900 rounded">Products</a>
+  <a href="subscribe.html" class="block py-2 px-4 hover:bg-green-100 dark:hover:bg-green-900 rounded">Subscribe</a>
+  <a href="community.html" class="block py-2 px-4 hover:bg-green-100 dark:hover:bg-green-900 rounded">Community</a>
+  <a href="impact.html" class="block py-2 px-4 hover:bg-green-100 dark:hover:bg-green-900 rounded">Impact</a>
+</nav>
+
+<main class="page pt-28 pb-16">
+
+  <!-- HERO -->
+  <section class="relative h-[50vh] flex items-center justify-center text-center overflow-hidden mb-20">
+    <img src="/assets/hero0-image%20subs-CaDCDPzR.jpg" alt="Subscribe" class="absolute inset-0 w-full h-full object-cover">
+    <div class="absolute inset-0 bg-black/30"></div>
+    <div class="relative z-10 max-w-2xl px-6">
+      <h2 class="text-5xl font-bold text-white mb-4">Subscribe to Urban Harvest</h2>
+      <p class="text-gray-200 mb-6">Get fresh, eco-friendly products delivered to your doorstep every month.</p>
+    </div>
+  </section>
+
+  <!-- SUBSCRIBE FORM -->
+  <section class="max-w-3xl mx-auto mb-20">
+    <h3 class="page-title text-center mb-6">Your Subscription Details</h3>
+    <p class="text-center text-gray-700 dark:text-gray-300 mb-8">Fill out the form below to receive our monthly eco-box.</p>
+    
+    <form id="subscribeForm" class="bg-white dark:bg-gray-800 shadow-md rounded-lg p-8 flex flex-col gap-6 transition-colors duration-300">
+      <div class="flex flex-col md:flex-row gap-4">
+        <input type="text" name="firstName" placeholder="First Name" required class="input-field flex-1">
+        <input type="text" name="lastName" placeholder="Last Name" required class="input-field flex-1">
+      </div>
+      <input type="email" name="email" placeholder="Email Address" required class="input-field w-full">
+      <select name="plan" required class="input-field w-full">
+        <option value="">Select Plan</option>
+        <option value="vegbox">Organic Veg Box - LKR 4,500/month</option>
+        <option value="cleaningkit">Eco Cleaning Kit - LKR 2,900</option>
+        <option value="seeds">Seed Subscription - LKR 1,500/month</option>
+      </select>
+      <textarea name="notes" placeholder="Additional Notes (optional)" class="input-field w-full resize-none"></textarea>
+      <button type="submit" class="btn w-full text-center">Subscribe Now</button>
+      <p id="successMsg" class="text-green-500 font-semibold text-center hidden mt-2">✅ Subscription Successful! Thank you.</p>
+    </form>
+  </section>
+
+  <!-- WHY SUBSCRIBE -->
+  <section class="max-w-7xl mx-auto mb-20">
+    <h3 class="page-title text-center mb-6">Why Subscribe?</h3>
+    <div class="grid-3 gap-8">
+      <div class="card hover:scale-105 transition-transform duration-300">
+        <h4 class="text-xl font-semibold mb-2">Freshness Guaranteed</h4>
+        <p class="opacity-80">Products sourced locally and delivered weekly to ensure maximum freshness.</p>
+      </div>
+      <div class="card hover:scale-105 transition-transform duration-300">
+        <h4 class="text-xl font-semibold mb-2">Eco-Friendly</h4>
+        <p class="opacity-80">All packaging is sustainable, reusable, or compostable to reduce waste.</p>
+      </div>
+      <div class="card hover:scale-105 transition-transform duration-300">
+        <h4 class="text-xl font-semibold mb-2">Support Local Farmers</h4>
+        <p class="opacity-80">Every subscription directly supports small farmers in your community.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CUSTOMER REVIEWS -->
+  <section class="max-w-7xl mx-auto mb-20">
+    <h3 class="page-title text-center mb-6">What Our Subscribers Say</h3>
+    <div class="grid-3 gap-8">
+      <div class="card hover:shadow-xl transition-shadow duration-300">
+        <p class="opacity-80 mb-2">"The Veg Box subscription is amazing! Everything is fresh and organic." – Ayesha K.</p>
+      </div>
+      <div class="card hover:shadow-xl transition-shadow duration-300">
+        <p class="opacity-80 mb-2">"Eco Cleaning Kit is so effective and safe for my kids." – Sanjay P.</p>
+      </div>
+      <div class="card hover:shadow-xl transition-shadow duration-300">
+        <p class="opacity-80 mb-2">"The Seed Subscription inspired me to start a mini garden at home!" – Thilini R.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="text-center mb-20">
+    <h3 class="page-title mb-4">Ready to Go Green?</h3>
+    <p class="page-subtitle mb-6">Subscribe today and start your sustainable journey.</p>
+    <a href="#subscribeForm" class="btn">Subscribe Now</a>
+  </section>
+
+</main>
+
+<!-- FOOTER -->
+<footer class="bg-[var(--primary)] dark:bg-gray-900 text-white p-8 mt-20">
+  <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-4">
+    <p>© 2026 Urban Harvest. All rights reserved.</p>
+    <div class="flex gap-4">
+      <a href="#" class="hover:text-green-300">Facebook</a>
+      <a href="#" class="hover:text-green-300">Instagram</a>
+      <a href="#" class="hover:text-green-300">Twitter</a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

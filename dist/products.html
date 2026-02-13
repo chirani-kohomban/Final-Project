@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth light">
+<head>
+  <meta charset="UTF-8">
+  <title>Urban Harvest | Products</title>
+  <script type="module" crossorigin src="/assets/main-3W3rYV1O.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/main-Cb9D-rMs.css">
+</head>
+<body>
+
+<!-- HEADER (same as index.html) -->
+<header class="bg-[var(--primary)] dark:bg-gray-900 text-white flex justify-between items-center p-4 fixed top-0 z-50 w-full shadow transition-colors duration-300">
+  <h1 class="text-xl font-bold">Urban Harvest</h1>
+
+  <nav class="hidden md:flex gap-6">
+    <a href="index.html" class="hover:text-green-300">Home</a>
+    <a href="products.html" class="hover:text-green-300">Products</a>
+    <a href="subscribe.html" class="hover:text-green-300">Subscribe</a>
+    <a href="community.html" class="hover:text-green-300">Community</a>
+    <a href="impact.html" class="hover:text-green-300">Impact</a>
+  </nav>
+
+  <div class="flex gap-2">
+    <button id="theme-toggle" class="btn">🌗</button>
+    <button id="mobile-menu-btn" class="btn md:hidden">☰</button>
+  </div>
+</header>
+
+<!-- MOBILE MENU -->
+<nav id="mobileMenu" class="hidden md:hidden fixed top-16 left-0 w-full bg-[var(--bg)] dark:bg-gray-800 p-4 z-40">
+  <a href="index.html" class="block py-2 px-4 hover:bg-green-100 dark:hover:bg-green-900 rounded">Home</a>
+  <a href="products.html" class="block py-2 px-4 hover:bg-green-100 dark:hover:bg-green-900 rounded">Products</a>
+  <a href="subscribe.html" class="block py-2 px-4 hover:bg-green-100 dark:hover:bg-green-900 rounded">Subscribe</a>
+  <a href="community.html" class="block py-2 px-4 hover:bg-green-100 dark:hover:bg-green-900 rounded">Community</a>
+  <a href="impact.html" class="block py-2 px-4 hover:bg-green-100 dark:hover:bg-green-900 rounded">Impact</a>
+</nav>
+
+<main class="page pt-28 pb-16">
+
+  <!-- SECTION 1: HERO -->
+  <section class="relative h-[60vh] flex items-center justify-center text-center overflow-hidden mb-20">
+    <img src="/assets/hero-image-2-CxDKwkay.jpg" alt="Our Products" class="absolute inset-0 w-full h-full object-cover">
+    <div class="absolute inset-0 bg-black/30"></div>
+    <div class="relative z-10 max-w-2xl px-6">
+      <h2 class="text-5xl font-bold text-white mb-4">Our Eco-Friendly Products</h2>
+      <p class="text-gray-200 mb-6">Organic, sustainable, and locally sourced products for your home.</p>
+      <a href="subscribe.html" class="btn">Subscribe for Monthly Boxes</a>
+    </div>
+  </section>
+
+  <!-- SECTION 2: FEATURED PRODUCTS -->
+  <section>
+    <h3 class="page-title">Featured Products</h3>
+    <p class="page-subtitle">Curated items that our customers love.</p>
+    <div class="grid-3">
+      <div class="card">
+        <img src="/assets/veggie0box-Bka34buI.jpg" alt="Organic Veg Box">
+        <h4 class="text-xl font-semibold mb-2">Organic Veg Box</h4>
+        <p class="opacity-80">Weekly fresh vegetables sourced within 50km radius.</p>
+        <p class="mt-4 font-semibold">LKR 4,500 / month</p>
+      </div>
+      <div class="card">
+        <img src="/assets/cleaning-kit-DG0gw2xb.jpg" alt="Eco Cleaning Kit">
+        <h4 class="text-xl font-semibold mb-2">Eco Cleaning Kit</h4>
+        <p class="opacity-80">Plant-based, refillable, child & pet safe.</p>
+        <p class="mt-4 font-semibold">LKR 2,900</p>
+      </div>
+      <div class="card">
+        <img src="/assets/seed-subscription-D5R26OP8.jpg" alt="Seed Subscription">
+        <h4 class="text-xl font-semibold mb-2">Seed Subscription</h4>
+        <p class="opacity-80">Monthly curated seeds for home gardening.</p>
+        <p class="mt-4 font-semibold">LKR 1,500 / month</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 3: CATEGORIES -->
+  <section class="mt-20">
+    <h3 class="page-title">Product Categories</h3>
+    <p class="page-subtitle">Explore by category.</p>
+    <div class="grid-3">
+      <div class="card">
+        <img src="/assets/Fruits-DzZs6IhK.jpg" alt="Fruits">
+        <h4 class="text-xl font-semibold mb-2">Fruits & Juices</h4>
+        <p class="opacity-80">Organic fruits, cold-pressed juices delivered weekly.</p>
+      </div>
+      <div class="card">
+        <img src="/assets/herbs-B12NdPL4.jpg" alt="Herbs">
+        <h4 class="text-xl font-semibold mb-2">Herbs & Spices</h4>
+        <p class="opacity-80">Fresh aromatic herbs for cooking, teas, and wellness.</p>
+      </div>
+      <div class="card">
+        <img src="/assets/gareneing-kit-BBdZ0P5d.jpg" alt="Garden Kit">
+        <h4 class="text-xl font-semibold mb-2">Home Garden Kits</h4>
+        <p class="opacity-80">All-in-one kits to start your home garden.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 4: IMPACT & STATS -->
+  <section class="mt-20">
+    <h3 class="page-title">Our Impact</h3>
+    <p class="page-subtitle">See what we’ve accomplished together.</p>
+    <div class="grid-3">
+      <div class="stat-card">
+        <h3>500+</h3>
+        <p>Local Farmers Supported</p>
+      </div>
+      <div class="stat-card">
+        <h3>10K+</h3>
+        <p>Eco Products Delivered</p>
+      </div>
+      <div class="stat-card">
+        <h3>95%</h3>
+        <p>Customer Satisfaction</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 5: CTA -->
+  <section class="mt-20 text-center">
+    <h3 class="page-title">Subscribe for Monthly Boxes</h3>
+    <p class="page-subtitle">Receive fresh, sustainable products delivered to your doorstep.</p>
+    <a href="subscribe.html" class="btn">Subscribe Now</a>
+  </section>
+
+</main>
+
+<!-- FOOTER -->
+<footer class="bg-[var(--primary)] dark:bg-gray-900 text-white p-8 mt-20">
+  <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-4">
+    <p>© 2026 Urban Harvest. All rights reserved.</p>
+    <div class="flex gap-4">
+      <a href="#" class="hover:text-green-300">Facebook</a>
+      <a href="#" class="hover:text-green-300">Instagram</a>
+      <a href="#" class="hover:text-green-300">Twitter</a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
