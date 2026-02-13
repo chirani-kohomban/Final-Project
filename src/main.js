@@ -47,3 +47,27 @@ themeToggleBtn.addEventListener('click', () => {
 mobileMenuBtn.addEventListener('click', () => {
   mobileMenu.classList.toggle('hidden');
 });
+
+// ===============================
+// SUBSCRIBE FORM SUCCESS MESSAGE
+// ===============================
+
+const form = document.getElementById("subscribeForm");
+const successMsg = document.getElementById("successMsg");
+
+if (form) {
+  form.addEventListener("submit", function (e) {
+    e.preventDefault(); // Prevent page refresh
+
+    // Show success message
+    successMsg.classList.remove("hidden");
+
+    // Optional: reset form after submit
+    form.reset();
+
+    // Optional: auto-hide success message after 4 seconds
+    setTimeout(() => {
+      successMsg.classList.add("hidden");
+    }, 4000);
+  });
+}
